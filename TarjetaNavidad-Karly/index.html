@@ -3,7 +3,7 @@
 <!--Actividad 1-->
 
 <!DOCTYPE html> <!-- Esta etiqueta declara el tipo de documento-->
-<html lange="es">
+<html lang="es">
 <head>
     <!-- El titulo de la página no es visible en el desarrollo pero es lo que funciona para el SEO-->
 <title> Tarjeta de Navidad | Personalizados </title>
@@ -17,7 +17,7 @@ y se adapte a diferentes dispositivos-->
 
 <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
 
-<link real="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head> <!--HASTA AQUI VA EL HEAD-->
 
  <!-- AQUI INICIA EL BODY-->
@@ -26,16 +26,87 @@ y se adapte a diferentes dispositivos-->
    <!-- Cover -->
    <div class="page active" id="page-0">
     <div class="float-container">
-     <img src="Grinch.avif" alt="Muñeco" class="covere-img">
+     <img src="pocoyo.jpeg" alt="Muñeco" class="cover-img">
     </div>
     <h1 class="cover-title">Feliz Navidad 2026 🤍</h1>
     <p class="cover-subtitle">Con todo mi cariño, ¡Felices Fiestas! </p>
     <button id="btn-enter" class="btn-primary">
-      <span class="btn-text">Entrar </span>
+      <span class="btn-text">Enter</span>
     </button>
    </div>
 
+    <!--Memsaje de la página 1-->
+  <div class="page" id="pagina1">
+    <div class="photo-circle">
+      <img class="photo-img" loading="lazy" src="osos.png" alt="Navidad">
+    </div>
+    <p class="msg-text">Que esta navidad este llena de magia y amor en tu hogar. 🎄</p>
+    <button id="btn-next-1" class="btn-secondary">
+      <span class="btn-text">Siguiente</span>
+    </button>
+   </div>
+
+<!--Mensaje página 2-->
+ <div class="page" id="pagina2">
+    <h2 class="gallery-title">Our little moments </h2>
+    <div class="gallery-grid">
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="3.jpg" alt="Concierto">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="2.jpg" alt="Momentos">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="1.PNG" alt="Fecha especial">
+     </div>
+    </div>
+  
+    <p class="gallery-caption">Cada foto guarda un recuerdo, y tú guardas mis favoritos. ⭐️</p>
+   </div>
+
+   <!--Boton para revelar un mensaje-->
+
+    <div class="page" id="pagina3">
+  <div class="float-container float">
+     <span class="heart-emoji">❄️</span>
+    </div>
+    <p class="msg-text">Estas listo para descubrir los deseos de esta navidad?</p>
+    <button id="btn-reveal" class="btn-309ebc">
+      <span class="btn-text">Descubre tu mensaje de Santa Claus </span>
+    </button>
+   </div>
+
+   <!--Mensaje Final-->
+<div class="page" id="pagina4">
+    <div id="final-card" class="final-card">
+     <audio id="navidad-audio" src="tarjeta.mp3"></audio>
+     <div class="photo-circle gold-border final-photo">
+      <img class="photo-img" loading="lazy" src="yorch .jpg" alt="xxx">
+     </div>
+     <h2 class="final-title">Merry Christmas!</h2>
+     <p class="final-msg">Te amo!</p>
+     <button id="btn-audio-ebc" class="btn-heart">
+      <span id="ebc-audio-btn-text">🤍</span>
+     </button>
+    </div>
+    <div id="confetti-container" class="confetti-container"></div>
+   </div>
+
+   <!--Navegación de la tarjeta -->
+
+
+   <nav class="nav-container" aria-label="Navegación de páginas">
+    <button id="btn-prev" class="btn-nav" aria-label="Anterior">
+      <i data-lucide="chevron-left" class="icon-nav"></i>
+    </button>
+    <div id="dots" class="dots-container"></div>
+    <button id="btn-next" class="btn-nav" aria-label="Siguiente">
+      <i data-lucide="chevron-right" class="icon-nav"></i>
+    </button>
+   </nav>
+  </div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
